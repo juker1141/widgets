@@ -42,11 +42,12 @@ export default () => {
       <button onClick={() => setShowDropdown(!showDropdown)}>Toggle Dropdown</button>
       {showDropdown ?
         <Dropdown
-        selected={selected}
-        onSelectedChange={setSelected}
-        options={options}
+          selected={selected}
+          onSelectedChange={setSelected}
+          options={options}
         /> : null
       }
-    </div>
+      <h1 style={{ color: selected.value }}>這是一段文字</h1>
+    </div >
   );
 }
